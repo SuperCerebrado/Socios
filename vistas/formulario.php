@@ -51,7 +51,7 @@
         </br>
         <label>Paga: &nbsp;</label>
         <!--<input type="radio" name="cobro1" value="0" checked>Aun No paga-->
-        <input type="radio" name="pago" value=130 autofocus checked>130 &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="pago" value=120 autofocus checked>120 &nbsp;&nbsp;<!--Checkbox-->
         <input type="radio" name="pago" value=150 autofocus>150 &nbsp;&nbsp;<!--Checkbox-->
         </br>
         </br>

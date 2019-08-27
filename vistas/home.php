@@ -16,10 +16,8 @@
 </head>
 <body>
     <!--<h1>Bienvenido <?php echo $_SESSION["user"]; ?></h1>-->
-    <ul>
-        <li><a href="../include/closeSession.php"><button type='button' class='btn btn-secondary'>Salir</button></a></li><br>
-        <li><a href='menu.php'> <button type='button' class='btn btn-secondary'>Menu</button></a></li>
-    </ul>
+    <a href="../include/closeSession.php"><button type='button' class='btn btn-secondary'>Salir</button></a>&nbsp;&nbsp;
+    <a href='menu.php'> <button type='button' class='btn btn-secondary'>Menu</button></a>&nbsp;&nbsp;
     <!-- Bootstrap CSS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -54,14 +52,19 @@
         $consulta->execute();
         $resultado = $consulta->fetchAll();
 
-        /*$total1=0;
-        $total2=0;
-        foreach ($resultado as $registro) {
+        $total=0;
+        //$biblioteca=0;
+        //$ganancia=0;
+        foreach ($resultado as $valor) {
             //si pago primer bimestre
-            $total1= $total1+$registro["Cobro1"];
-            $total2= $total2+$registro["Cobro2"];
+            $total= $total+$valor["Pago"];
         }
-        $total=$total1+$total2;*/
+        $biblioteca= ($total*87)/100;
+        $ganancia=($total*13)/100;
+        echo "Total: ".$total."&nbsp;&nbsp;&nbsp;&nbsp;";
+        echo "Biblioteca: ".$biblioteca."&nbsp;&nbsp;&nbsp;&nbsp;";
+        echo "Ganancia: ".$ganancia."<br>";
+        
         echo "<table class='table'>";
             echo "<thead class='thead-dark'>";
                 echo "<tr>";

@@ -69,11 +69,11 @@
         </br>
         <label>Paga: &nbsp;</label>
         <?php
-            if($row['Pago']==130){
-                echo "<input type='radio' name='pago' value='130' checked>130 &nbsp;&nbsp;";
+            if($row['Pago']==120){
+                echo "<input type='radio' name='pago' value='120' checked>120 &nbsp;&nbsp;";
                 echo "<input type='radio' name='pago' value='150' >150 &nbsp;&nbsp;";
             }else{
-                echo "<input type='radio' name='pago' value='130' >130 &nbsp;&nbsp;";
+                echo "<input type='radio' name='pago' value='120' >120 &nbsp;&nbsp;";
                 echo "<input type='radio' name='pago' value='150' checked>150 &nbsp;&nbsp;";
             }
         ?>
