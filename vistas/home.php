@@ -46,7 +46,7 @@
         if ((isset($_REQUEST["termino"]))/*||(isset($_REQUEST["termino2"]))*/) {
             $termino = $_REQUEST["termino"];
             //$termino2 = $_REQUEST["termino2"];
-            $sql = "$sql WHERE (T.Altura LIKE '%$termino%') OR (T.Calle LIKE '%$termino%') OR (T.Horario LIKE '%$termino%') OR (C.Nombre LIKE '%$termino%') OR (T.N° LIKE '%$termino%') OR (T.Pago LIKE '%$termino%')";
+            $sql = "$sql WHERE (T.Altura LIKE '%$termino%') OR (T.Calle LIKE '%$termino%') OR (T.Horario LIKE '%$termino%') OR (C.Nombre LIKE '%$termino%') OR (T.N° LIKE '%$termino%') OR (T.Pago LIKE '%$termino%') OR (T.Zona LIKE '%$termino%')";
             //$sql = "$sql WHERE C.Altura > $termino2";
             //(nombre LIKE 'fish') OR (stock <= 26);
         }
@@ -70,6 +70,7 @@
                     echo "<th scope='col'>Altura</th>";
                     echo "<th scope='col'>Pago</th>";
                     echo "<th scope='col'>Horario</th>";
+                    echo "<th scope='col'>Zona</th>";
                     echo "<td scope='col'><a href='formulario.php'><button type='button' class='btn btn-success'>NUEVO</button></a></td>";
                 echo "</tr>";
             echo "</thead>";
@@ -95,6 +96,7 @@
                         echo "<td scope='col'>".$registro['Altura']."</td>";
                         echo "<td scope='col'>".$registro['Pago']."</td>";
                         echo "<td scope='col'>".$registro['Horario']."</td>";
+                        echo "<td scope='col'>".$registro['Zona']."</td>";
                         echo "<td scope='col'><a href='../eliminar.php?id=".$registro['Id']."'><button type='button' class='btn btn-danger'>Eliminar</button> </a></td>";
                         echo "<td scope='col'><a href='formularioEdicion.php?id=".$registro['Id']."'><button type='button' class='btn btn-warning'>Editar</button></a></td>";
                     echo "</tr>";

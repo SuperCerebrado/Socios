@@ -51,14 +51,22 @@
         </br>
         <label>Paga: &nbsp;</label>
         <!--<input type="radio" name="cobro1" value="0" checked>Aun No paga-->
-        <input type="radio" name="pago" value=130 autofocus checked>130<!--Checkbox-->
-        <input type="radio" name="pago" value=150 autofocus>150<!--Checkbox-->
+        <input type="radio" name="pago" value=130 autofocus checked>130 &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="pago" value=150 autofocus>150 &nbsp;&nbsp;<!--Checkbox-->
         </br>
         </br>
         <label>Horario: &nbsp;</label>
-        <input type="radio" name="horario" value="Mañana" checked>Mañana<!--Checkbox-->
-        <input type="radio" name="horario" value="Tarde" autofocus>Tarde<!--Checkbox-->
-        <input type="radio" name="horario" value="Noche" autofocus>Noche<!--Checkbox-->
+        <input type="radio" name="horario" value="Mañana" checked>Mañana &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="horario" value="Tarde" autofocus>Tarde &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="horario" value="Noche" autofocus>Noche &nbsp;&nbsp;<!--Checkbox-->
+        </br>
+        </br>
+        <label>Zona: &nbsp;</label>
+        <input type="radio" name="zona" value="zona1" checked>zona1 &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="zona" value="zona2" autofocus>zona2 &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="zona" value="zona3" autofocus>zona3 &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="zona" value="zona4" autofocus>zona4 &nbsp;&nbsp;<!--Checkbox-->
+        <input type="radio" name="zona" value="zona5" autofocus>zona5 &nbsp;&nbsp;<!--Checkbox-->
         </br>
         </br>
         <input class="btn btn-primary" type="submit" name="Boton" value="Guardar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--con value cambiamos el nombre del boton que por defecto biene en enviar-->

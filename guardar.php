@@ -9,6 +9,7 @@
         $altura=$_POST['altura'];
         $pago=$_POST['pago'];
         $horario=$_POST['horario'];
+        $zona=$_POST['zona'];
         /*if($_POST['pago'] == "130"){
             $pago = 130;
         }elseif($_POST['pago'] == "150"){
@@ -24,7 +25,7 @@
             $cobro2=0;
         }*/
     
-        $insert = $conexion->prepare("INSERT INTO tabla (N°, Calle, Altura, Pago, Horario) VALUES ('$numeroSocio', '$calle', '$altura', '$pago', '$horario')");
+        $insert = $conexion->prepare("INSERT INTO tabla (N°, Calle, Altura, Pago, Horario, Zona) VALUES ('$numeroSocio', '$calle', '$altura', '$pago', '$horario', '$zona')");
         $insert->execute();
 
         header("location: vistas/home.php");

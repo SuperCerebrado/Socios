@@ -70,11 +70,11 @@
         <label>Paga: &nbsp;</label>
         <?php
             if($row['Pago']==130){
-                echo "<input type='radio' name='pago' value='130' checked>130";
-                echo "<input type='radio' name='pago' value='150' >150";
+                echo "<input type='radio' name='pago' value='130' checked>130 &nbsp;&nbsp;";
+                echo "<input type='radio' name='pago' value='150' >150 &nbsp;&nbsp;";
             }else{
-                echo "<input type='radio' name='pago' value='130' >130";
-                echo "<input type='radio' name='pago' value='150' checked>150";
+                echo "<input type='radio' name='pago' value='130' >130 &nbsp;&nbsp;";
+                echo "<input type='radio' name='pago' value='150' checked>150 &nbsp;&nbsp;";
             }
         ?>
         </br>
@@ -82,17 +82,53 @@
         <label>Horario: &nbsp;</label>
         <?php
             if($row['Horario']=="Mañana"){
-                echo "<input type='radio' name='horario' value='Mañana' checked>Mañana";
-                echo "<input type='radio' name='horario' value='Tarde' >Tarde";
-                echo "<input type='radio' name='horario' value='Noche' >Noche";
+                echo "<input type='radio' name='horario' value='Mañana' checked>Mañana &nbsp;&nbsp;";
+                echo "<input type='radio' name='horario' value='Tarde' >Tarde &nbsp;&nbsp;";
+                echo "<input type='radio' name='horario' value='Noche' >Noche &nbsp;&nbsp;";
             }elseif($row['Horario']=="Tarde"){
-                echo "<input type='radio' name='horario' value='Mañana' >Mañana";
-                echo "<input type='radio' name='horario' value='Tarde' checked>Tarde";
-                echo "<input type='radio' name='horario' value='Noche' >Noche";
+                echo "<input type='radio' name='horario' value='Mañana' >Mañana &nbsp;&nbsp;";
+                echo "<input type='radio' name='horario' value='Tarde' checked>Tarde &nbsp;&nbsp;";
+                echo "<input type='radio' name='horario' value='Noche' >Noche &nbsp;&nbsp;";
             }else{
-                echo "<input type='radio' name='horario' value='Mañana' >Mañana";
-                echo "<input type='radio' name='horario' value='Tarde' >Tarde";
-                echo "<input type='radio' name='horario' value='Noche' checked>Noche";
+                echo "<input type='radio' name='horario' value='Mañana' >Mañana &nbsp;&nbsp;";
+                echo "<input type='radio' name='horario' value='Tarde' >Tarde &nbsp;&nbsp;";
+                echo "<input type='radio' name='horario' value='Noche' checked>Noche &nbsp;&nbsp;";
+            }
+        ?>
+        </br>
+        </br>
+        <label>Zona: &nbsp;</label>
+        <?php
+            if($row['Zona']=='zona1'){
+                echo "<input type='radio' name='zona' value='zona1' checked>zona1 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona2' >zona2 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona3' >zona3 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona4' >zona4 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona5' >zona5 &nbsp;&nbsp;";
+            }elseif($row['Zona']=='zona2'){
+                echo "<input type='radio' name='zona' value='zona1' >zona1 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona2' checked>zona2 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona3' >zona3 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona4' >zona4 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona5' >zona5 &nbsp;&nbsp;";
+            }elseif($row['Zona']=='zona3'){
+                echo "<input type='radio' name='zona' value='zona1' >zona1 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona2' >zona2 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona3' checked>zona3 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona4' >zona4 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona5' >zona5 &nbsp;&nbsp;";
+            }elseif($row['Zona']=='zona4'){
+                echo "<input type='radio' name='zona' value='zona1' >zona1 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona2' >zona2 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona3' >zona3 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona4' checked>zona4 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona5' >zona5 &nbsp;&nbsp;";
+            }else{
+                echo "<input type='radio' name='zona' value='zona1' >zona1 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona2' >zona2 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona3' >zona3 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona4' >zona4 &nbsp;&nbsp;";
+                echo "<input type='radio' name='zona' value='zona5' checked>zona5 &nbsp;&nbsp;";
             }
         ?>
         </br>

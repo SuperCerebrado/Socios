@@ -9,6 +9,7 @@ try {
     $altura=$_POST['altura'];
     $pago=$_POST['pago'];
     $horario=$_POST['horario'];
+    $zona=$_POST['zona'];
     
 	//imagen
     $select = $conexion->prepare('SELECT * FROM tabla WHERE Id =:id'); 
@@ -17,7 +18,7 @@ try {
     $row = $select->fetch();
     //extract($row);
 
-    $sentenciaSql = "UPDATE tabla SET N°='$numeroSocio', Calle = '$calle', Altura='$altura', Pago='$pago', Horario='$horario' WHERE Id='$id'";
+    $sentenciaSql = "UPDATE tabla SET N°='$numeroSocio', Calle = '$calle', Altura='$altura', Pago='$pago', Horario='$horario', Zona='$zona' WHERE Id='$id'";
     $update = $conexion->prepare($sentenciaSql);              
     $update->execute();
     //var_dump( $sentenciaSql);
