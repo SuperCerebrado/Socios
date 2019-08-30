@@ -1,3 +1,11 @@
+<!--
+/*
+*                       Leonardo Emanuel Espinoza
+*                           $index-php
+*                   Ultima modificacion : 29/07/2019
+*                           Version: 1.0
+*/
+-->
 <?php
     session_start();
     if(!isset($_SESSION["user"])){
@@ -8,10 +16,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta name="description" content=" CRUD(Crear, Leer, Actualizar y Borrar)"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="../style/menu.css" >
     <title>Menu</title>
 </head>
 <body>
@@ -19,6 +35,21 @@
     <ul>
         <li><a href="../include/closeSession.php">Cerrar Sesion</a></li>
     </ul>
+    <div id="circulo1">
+        <p>Socios</p>
+    </div>
+    <div class="circulo2">
+        <p>Zona 2</p>
+    </div>
+    <div class="circulo3">
+        <p>Zona 3</p>
+    </div>
+    <div class="circulo4">
+        <p>Zona 4</p>
+    </div>
+    <div class="circulo5">
+        <p>Zona 5</p>
+    </div>
     <div id="menuPrincipalLista">
 			<ul>
 				<li>

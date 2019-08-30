@@ -1,0 +1,61 @@
+body{
+    background: url(../img/menu.jpg) no-repeat center center fixed;
+    background-size: contain;
+}
+#circulo1 {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	background: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#circulo1 > p {
+	font-family: sans-serif;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+  .circulo2 {
+    height: 20%;
+    width: 20%;
+    display: table-cell;
+    text-align: center;
+    font-size:22px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #8CC657;
+  }
+  .circulo3 {
+    height: 100px;
+    width: 100px;
+    display: table-cell;
+    text-align: center;
+    font-size:22px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #8CC657;
+  }
+  .circulo4 {
+    height: 100px;
+    width: 100px;
+    display: table-cell;
+    text-align: center;
+    font-size:22px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #8CC657;
+  }
+  .circulo5 {
+    height: 100px;
+    width: 100px;
+    display: table-cell;
+    text-align: center;
+    font-size:22px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #8CC657;
+  }
