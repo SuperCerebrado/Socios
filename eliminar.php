@@ -20,5 +20,9 @@
     }     
     $delete = null;
     
-    header("location: vistas/home.php");
+    //header("location: vistas/home.php");
 ?>
+<script type="text/javascript">//eliminar con cartel de alert y volver al index
+	alert("Registro eliminado");
+	window.location.href='vistas/home.php';
+</script>
