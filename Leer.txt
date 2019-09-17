@@ -1,0 +1,6 @@
+1. Instalar xampp
+2. En el administrados de bases phpmyadmin crear una base con nombre socio1.3
+3. En dicha base inportar el archivo sql que se encuentra en la carpeta base del proyecto
+4. Entrar desde esplorador con localhost/....
+5. Usuario y contraseña cargados en la base user:Leo Pass:1234
+Listo!
